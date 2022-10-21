@@ -70,10 +70,10 @@ const Header =()=> {
               animate={{opacity:1, x:0}}
               exit={{opacity:0, x:200}}
                   className='flex items-center gap-8'>
-                  <Link to=""><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer'>Home</li></Link>
-                  <Link to=""><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer '>Menu</li></Link>
-                  <Link to=""><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer '>About Us</li></Link>
-                  <Link to=""><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer'>Services</li></Link>
+                  <Link to="/"><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer'>Home</li></Link>
+                  <Link to="/menu"><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer '>Menu</li></Link>
+                  <Link to="/about"><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer '>About Us</li></Link>
+                  <Link to="/services"><li className='text-base text-textColor font-bold hover:text-green-400 duration-100 transition-all ease-in-out cursor-pointer'>Services</li></Link>
                 </motion.ul>
 
                 <div className='relative flex items-center justify-center' onClick={showCart}>
@@ -171,10 +171,10 @@ const Header =()=> {
                     )}
 
              <ul className='flex flex-col'>
-                  <Link to=""><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Home</li></Link>
-                  <Link to=""><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Menu</li></Link>
-                  <Link to=""><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2 ' onClick={() => setIsMenu(false)}>About Us</li></Link>
-                  <Link to=""><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Services</li></Link>
+                  <Link to="/"><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Home</li></Link>
+                  <Link to="/menu"><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Menu</li></Link>
+                  <Link to="/about"><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2 ' onClick={() => setIsMenu(false)}>About Us</li></Link>
+                  <Link to="/services"><li className='text-base text-primary font-bold hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-red-300 px-4 py-2' onClick={() => setIsMenu(false)}>Services</li></Link>
             </ul>
                   
                   <p className='m-2 p-2 rounded-md shadow-md flex items-center gap-3 cursor-pointer 
