@@ -10,6 +10,7 @@ import EmptyCart from "../assets/empty-cart.svg";
 import CartItem from "./CartItem";
 
 const CartContainer = () => {
+  
   const [{ cartShow, cartItems, user }, dispatch] = useStateValue();
   const [flag, setFlag] = useState(1);
   const [tot, setTot] = useState(0);
